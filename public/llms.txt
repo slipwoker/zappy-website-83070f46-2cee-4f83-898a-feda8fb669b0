@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+גלי את עולם הפרשת החלה עם האקדמיה הרוחנית הראשונה בישראל. הרבנית שרית גז מעניקה לנשים כלים מעשיים ורוחניים למצווה משמעותית. הצטרפי עכשיו!
+
+### אודות
+https://example.com/about
+הכירי את הרבנית שרית גז, חלוצת החינוך הרוחני להפרשת חלה בישראל. שיטת הוראה ייחודית המשלבת מסורת עם חדשנות ומעצימה נשים ברחבי הארץ.
+
+### תוכניות
+https://example.com/programs
+למדי הלכות הפרשת חלה בקורס אונליין מקיף או בהכשרה אישית. תוכניות לימוד מותאמות לכל רמה, עם ליווי צמוד והסמכה מקצועית. הרשמי היום לתוכנית!
+
+### צור קשר
+https://example.com/contact
+יש לך שאלות על הקורסים או רוצה להצטרף לאקדמיה? צרי קשר עם הרבנית שרית גז והצוות שלנו. נשמח ללוות אותך בדרך למצוות הפרשת חלה המשמעותית.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
