@@ -234,6 +234,257 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+<style data-zappy-section-v2-css="true">
+/* V2 Regenerated Section CSS */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #071F1D;
+  padding: 0;
+  margin: 0;
+}
+
+/* Background image layer */
+.index-hero-section .hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
+
+/* Gradient scrim overlay for text legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 65% 45%, rgba(7,31,29,0.25) 0%, transparent 45%),
+    radial-gradient(circle at 35% 75%, rgba(14,74,58,0.35) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(7,31,29,0.55) 0%, rgba(7,31,29,0.75) 50%, rgba(7,31,29,0.92) 100%);
+}
+
+/* Hero content overlay */
+.index-hero-section .hero-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.index-hero-section .hero-content-container {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  color: var(--text-light);
+}
+
+/* Decorative accent line */
+.index-hero-section .hero-accent-line {
+  width: 120px;
+  height: 3px;
+  margin: 0 auto 32px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(200,168,106,0.4);
+}
+
+/* Hero headline */
+.index-hero-section .hero-headline {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-light);
+  margin: 0 0 24px 0;
+  text-shadow: 0 12px 32px rgba(0,0,0,0.6), 0 4px 12px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/* Hero subtitle */
+.index-hero-section .hero-subtitle {
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--text-light);
+  opacity: 0.95;
+  margin: 0 0 48px 0;
+  text-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA button group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Primary CTA button */
+.index-hero-section .btn-primary {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #F2C56B 0%, #D8B15C 55%, #B88733 100%);
+  color: #0A1512;
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 60px rgba(242,197,107,0.25);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+.index-hero-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 80px rgba(242,197,107,0.35);
+}
+
+/* Secondary CTA button */
+.index-hero-section .btn-secondary {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--accent);
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 2px solid rgba(200,168,106,0.7);
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+.index-hero-section .btn-secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(200,168,106,0.12);
+  border-color: var(--accent);
+}
+
+/* CTA icons */
+.index-hero-section .cta-icon {
+  flex-shrink: 0;
+  stroke: currentColor;
+}
+
+/* Bottom divider wrapper */
+.index-hero-section .index-hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.index-hero-section .index-hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+    padding-top: 0;
+  }
+
+  .index-hero-section .hero-content-wrapper {
+    padding: 100px 16px 60px;
+    min-height: 100vh;
+  }
+
+  .index-hero-section .hero-accent-line {
+    width: 80px;
+    margin-bottom: 24px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 8px 24px rgba(0,0,0,0.7), 0 3px 10px rgba(0,0,0,0.5);
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .index-hero-section .btn-primary,
+  .index-hero-section .btn-secondary {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  .index-hero-section .index-hero-divider-wrapper {
+    height: 60px;
+  }
+}
+</style>
     <link rel="stylesheet" href="/styles.css">
 
     <style id="zappy-dropdown-submenu-styles">
@@ -317,16 +568,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
   
   <button class="phone-header-btn" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -775,58 +1026,50 @@
 </script>
   
   <main>
-    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-scrim">
-  <!-- Background Image -->
-  <img data-hero-bg="true" data-placeholder="index-hero-bg" data-context="Moody, cinematic portrait of a woman in her 40s-50s with a warm, spiritual presence, standing in an elegant emerald-toned lounge setting. Soft golden accent lighting, intimate atmosphere, professional photography with shallow depth of field. The woman wears modest traditional Jewish attire, holding freshly baked challah bread with reverence. Background features rich emerald green walls, subtle gold decorative elements, and soft candlelight. The mood is contemplative, warm, and deeply spiritual - evoking connection to tradition and sacred practice. High-end editorial photography style with cinematic color grading (emerald greens, deep teals, warm golds). Shot from a respectful medium distance, centered composition." class="index-hero-bg" width="1920" height="1080" src="/assets/site-index-hero-bg.webp" alt="הרבנית שרית גז - מחוברות לחיים">
+    <section class="index-hero-section" data-layout-spec="בית-hero" data-hero-type="fullscreen-card" data-zappy-section="true">
+  <!-- Full-bleed background image -->
+  <div class="hero-bg-wrapper">
+    <div class="hero-bg-image" role="img" aria-label="הרבנית שרית גז - מחוברות לחיים" style="background-image: url('assets/site-index-hero-bg.webp');  background-size: cover; background-position: center;"></div>
+  </div>
 
-  <!-- Gradient Scrim Overlay -->
-  <div class="index-hero-scrim" aria-hidden="true"></div>
+  <!-- Gradient scrim overlay for text legibility -->
+  <div class="hero-scrim" aria-hidden="true"></div>
 
-  <!-- Grain Texture Overlay -->
-  <div class="index-hero-grain" aria-hidden="true"></div>
-
-  <!-- Content Overlay -->
-  <div class="index-hero-content">
-    <div class="index-hero-content-inner">
-      <h1>מחוברות לחיים דרך מצוות החלה</h1>
-      <h3>אקדמיה רוחנית-חינוכית לנשים המשלבת מסורת עתיקה עם הוראה מודרנית, במסע מודרך של התחברות ומשמעות</h3>
+  <!-- Hero content overlay -->
+  <div class="hero-content-wrapper">
+    <div class="hero-content-container">
+      <!-- Decorative accent line -->
+      <div class="hero-accent-line" aria-hidden="true"></div>
       
-      <div class="index-hero-cta-row">
-        <a href="/contact" class="index-hero-btn-primary">שיחה עם האקדמיה</a>
-        <a href="/programs" class="index-hero-btn-secondary">מסלולי הלימוד</a>
-      </div>
-
-      <!-- Gold Rule with Toast Icon -->
-      <div class="index-hero-signature">
-        <svg class="index-hero-rule-line" data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 280 2" xmlns="http://www.w3.org/2000/svg">
-          <line x1="0" y1="1" x2="280" y2="1" stroke="var(--accent)" stroke-width="1" opacity="0.6"></line>
-        </svg>
-        <svg class="index-hero-toast-icon" data-element-type="icon" data-icon-type="svg" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 14 L6 24 C6 25.1 6.9 26 8 26 L24 26 C25.1 26 26 25.1 26 24 L26 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M4 14 L16 6 L28 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-          <circle cx="16" cy="18" r="2" fill="currentColor"></circle>
-        </svg>
+      <!-- Main headline -->
+      <h1 class="hero-headline">מחוברות לחיים<br>דרך מצוות החלה</h1>
+      
+      <!-- Supporting subtitle -->
+      <h3 class="hero-subtitle">אקדמיה רוחנית-חינוכית לנשים המשלבת מסורת עתיקה עם הוראה מודרנית,<br>במסע מודרך של התחברות ומשמעות</h3>
+      
+      <!-- CTA buttons -->
+      <div class="hero-cta-group">
+        <a href="/contact" class="btn-primary hero-cta">
+          <svg data-element-type="icon" data-icon-type="svg" class="cta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>שיחה עם האקדמיה</span>
+        </a>
+        <a href="/programs" class="btn-secondary hero-cta">
+          <svg data-element-type="icon" data-icon-type="svg" class="cta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span>מסלולי הלימוד</span>
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Bottom Divider: Cinematic Fade with Toast Icon -->
+  <!-- Bottom decorative divider -->
   <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" class="index-hero-divider-svg" viewbox="0 0 1200 120" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="index-hero-fade-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color:rgba(7,31,29,0);stop-"></stop>
-          <stop offset="100%" style="stop-color:#071F1D;stop-opacity:1"></stop>
-        </linearGradient>
-      </defs>
-      <rect x="0" y="0" width="1200" height="120" fill="url(#index-hero-fade-gradient)"></rect>
-    </svg>
-    <!-- Centered Toast Icon on Divider -->
-    <svg class="index-hero-divider-toast" data-element-type="icon" data-icon-type="svg" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="16" cy="16" r="14" fill="var(--bg-dark)" stroke="var(--accent)" stroke-width="1.5"></circle>
-      <path d="M10 18 L10 24 C10 24.6 10.4 25 11 25 L21 25 C21.6 25 22 24.6 22 24 L22 18" stroke="var(--accent)" stroke-width="1.5" fill="var(--bg-light)" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M8 18 L16 13 L24 18" stroke="var(--accent)" stroke-width="1.5" fill="var(--bg-light)" stroke-linecap="round" stroke-linejoin="round"></path>
-      <circle cx="16" cy="20" r="1.5" fill="var(--accent)"></circle>
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 L0,55 Q100,48 200,52 T400,50 Q500,54 600,48 T800,52 Q900,50 1000,54 T1200,50 L1200,100 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
 </section>
@@ -841,7 +1084,7 @@
     <div class="index-benefits-grid">
       <article class="index-benefits-card">
         <div class="index-benefits-icon">
-          <svg data-element-type="icon" data-icon-type="svg" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 4L26.4 14.4H37.2L28.4 21.2L30.8 31.6L24 24.8L17.2 31.6L19.6 21.2L10.8 14.4H21.6L24 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
             <circle cx="24" cy="38" r="4" stroke="currentColor" stroke-width="2" fill="none"></circle>
             <path d="M24 34V24" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
@@ -853,7 +1096,7 @@
 
       <article class="index-benefits-card">
         <div class="index-benefits-icon">
-          <svg data-element-type="icon" data-icon-type="svg" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 8C24 8 18 12 18 18C18 22 20.5 24 24 24C27.5 24 30 22 30 18C30 12 24 8 24 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
             <path d="M24 24V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
             <path d="M16 32C16 32 18 30 20 30C22 30 24 32 24 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
@@ -867,7 +1110,7 @@
 
       <article class="index-benefits-card">
         <div class="index-benefits-icon">
-          <svg data-element-type="icon" data-icon-type="svg" width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg data-element-type="icon" data-icon-type="svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="14" cy="14" r="6" stroke="currentColor" stroke-width="2" fill="none"></circle>
             <circle cx="34" cy="14" r="6" stroke="currentColor" stroke-width="2" fill="none"></circle>
             <circle cx="24" cy="34" r="6" stroke="currentColor" stroke-width="2" fill="none"></circle>
@@ -884,7 +1127,7 @@
   </div>
 
   <div class="index-benefits-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="benefits-rule-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" style="stop-color:var(--accent);stop-"></stop>
@@ -928,7 +1171,7 @@
   </div>
 
   <div class="index-showcase-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 120" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="ribbon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" style="stop-color:rgba(7,31,29,0.95);stop-opacity:1"></stop>
@@ -984,7 +1227,7 @@
 
     <div class="index-testimonials-rule-wrapper">
       <div class="index-testimonials-gold-rule">
-        <svg data-no-icon-edit="true" aria-hidden="true" width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg data-no-icon-edit="true" aria-hidden="true" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30 5 L32 18 L45 15 L35 25 L48 30 L35 35 L45 45 L32 42 L30 55 L28 42 L15 45 L25 35 L12 30 L25 25 L15 15 L28 18 Z" fill="var(--accent)" opacity="0.4"></path>
           <circle cx="30" cy="30" r="3" fill="var(--accent)"></circle>
         </svg>
@@ -993,7 +1236,7 @@
   </div>
 
   <div class="index-testimonials-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,28 Q40,32 80,26 T160,30 Q200,26 240,32 T320,28 Q360,30 400,26 T480,32 Q520,28 560,30 T640,26 Q680,32 720,28 T800,30 Q840,26 880,32 T960,28 Q1000,30 1040,26 T1120,32 Q1160,28 1200,30 L1200,60 Z" fill="#071F1D"></path>
     </svg>
   </div>

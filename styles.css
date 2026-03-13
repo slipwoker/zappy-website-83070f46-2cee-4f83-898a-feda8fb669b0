@@ -68,7 +68,6 @@
   src: url('assets/fonts/Rubik-Bold.woff2') format('woff2');
 }
 
-
 /* Self-hosted fonts (Inter + Rubik for multi-language support) */
 
 /* Inter font (English / LTR languages) */
@@ -853,7 +852,6 @@ ul, ol {
     text-align: center;
   }
 }
-
 
 /* ============================================
    NAVBAR LAYOUT - POST-GENERATION FIXES
@@ -1683,7 +1681,6 @@ html[lang="ar"] .nav-cta-btn {
 /* Post-generation fix: Remove main element margin-top and padding-top */
 main { margin-top: 0 !important; padding-top: 0 !important; }
 
-
 /* Footer Styles */
 .site-footer {
   background-color: var(--bg-dark, #05241F);
@@ -1893,262 +1890,31 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   color: var(--accent, #C8A86A);
 }
 
-/* index-hero */
-.index-hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-  background-color: #071F1D;
-  color: var(--text-light);
-}
-
 /* Background Image - Full Bleed */
-.index-hero-section .index-hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-}
 
 /* Gradient Scrim Overlay - Emerald to Dark */
-.index-hero-section .index-hero-scrim {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(18,62,51,0.65) 0%, rgba(7,31,29,0.95) 100%);
-  z-index: 1;
-  pointer-events: none;
-}
 
 /* Subtle Grain Texture Overlay */
-.index-hero-section .index-hero-grain {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
-  opacity: 0.35;
-  z-index: 2;
-  pointer-events: none;
-  mix-blend-mode: overlay;
-}
 
 /* Content Overlay */
-.index-hero-section .index-hero-content {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 680px;
-  padding: 0 24px;
-  text-align: center;
-}
-
-.index-hero-section .index-hero-content-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
 
 /* Typography - H1 Headline */
-.index-hero-section h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 56px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.05;
-  color: #F3E7CD;
-  text-shadow: 0 10px 28px rgba(0,0,0,0.45);
-  margin: 0;
-  text-align: center;
-}
 
 /* Typography - H3 Subtitle */
-.index-hero-section h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.6;
-  color: #B7AA8A;
-  margin: 0;
-  text-align: center;
-  max-width: 560px;
-}
 
 /* CTA Row */
-.index-hero-section .index-hero-cta-row {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 8px;
-  flex-wrap: wrap;
-}
 
 /* Primary Button */
-.index-hero-section .index-hero-btn-primary {
-  background: linear-gradient(180deg, #F2C56B 0%, #D8B15C 55%, #B88733 100%);
-  color: #0A1512;
-  padding: 14px 26px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.18);
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  display: inline-block;
-  box-shadow: 0 14px 40px rgba(0,0,0,0.35);
-  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.index-hero-section .index-hero-btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
-}
 
 /* Secondary Button */
-.index-hero-section .index-hero-btn-secondary {
-  background: transparent;
-  color: #F2C56B;
-  padding: 14px 26px;
-  border-radius: 999px;
-  border: 1px solid rgba(216,177,92,0.6);
-  font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.index-hero-section .index-hero-btn-secondary:hover {
-  background: rgba(216,177,92,0.12);
-  border-color: rgba(216,177,92,0.85);
-}
 
 /* Signature: Gold Rule + Toast Icon */
-.index-hero-section .index-hero-signature {
-  position: relative;
-  width: 280px;
-  margin-top: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.index-hero-section .index-hero-rule-line {
-  width: 100%;
-  height: 2px;
-  display: block;
-}
-
-.index-hero-section .index-hero-toast-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 32px;
-  height: 32px;
-  color: var(--accent);
-  background: var(--bg-dark);
-  border-radius: 50%;
-  padding: 4px;
-}
 
 /* Bottom Divider Wrapper */
-.index-hero-section .index-hero-divider-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.index-hero-section .index-hero-divider-svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
 
 /* Centered Toast Icon on Divider */
-.index-hero-section .index-hero-divider-toast {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 32px;
-  height: 32px;
-  color: var(--accent);
-  pointer-events: none;
-}
 
 /* Responsive: Mobile */
-@media (max-width: 768px) {
-  .index-hero-section {
-    min-height: 100vh;
-    padding-top: 100px;
-  }
-
-  .index-hero-section .index-hero-content {
-    max-width: 100%;
-    padding: 0 16px;
-  }
-
-  .index-hero-section h1 {
-    font-size: 36px;
-    line-height: 1.1;
-  }
-
-  .index-hero-section h3 {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .index-hero-section .index-hero-cta-row {
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .index-hero-section .index-hero-btn-primary,
-  .index-hero-section .index-hero-btn-secondary {
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-  }
-
-  .index-hero-section .index-hero-signature {
-    width: 220px;
-    margin-top: 12px;
-  }
-
-  .index-hero-section .index-hero-divider-wrapper {
-    height: 80px;
-  }
-
-  .index-hero-section .index-hero-divider-toast {
-    width: 28px;
-    height: 28px;
-    bottom: 8px;
-  }
-}
 
 /* index-benefits */
 .index-benefits-section {
@@ -4653,13 +4419,10 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   }
 }
 
-
-
 /* Global font override - exclude icon fonts and special elements */
 *:not(.fas):not(.far):not(.fab):not(.fa):not([class*="fa-"]):not(.iconify):not([class*="icon"]):not(code):not(pre):not(i[class*="fa"]) {
   font-family: 'Rubik', sans-serif !important;
 }
-
 
 /* Logo size constraint - enforce max-height only */
 .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
@@ -4668,7 +4431,6 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
   width: auto !important;
   object-fit: contain !important;
 }
-
 
 /* Hide WhatsApp float button on desktop (mobile-only) */
 @media (min-width: 769px) {
@@ -4679,7 +4441,6 @@ main { margin-top: 0 !important; padding-top: 0 !important; }
     pointer-events: none !important;
   }
 }
-
 
 /* ============================================
    MOBILE RESPONSIVE FIXES (Auto-generated)
@@ -5188,7 +4949,6 @@ nav.navbar .sub-menu li a:hover { color: #C8A86A !important; background-color: r
   opacity: 0.8;
 }
 
-
 /* Cookie Consent Styles */
 
 /* Cookie Consent Customizations */
@@ -5285,7 +5045,6 @@ nav.navbar .sub-menu li a:hover { color: #C8A86A !important; background-color: r
   white-space: nowrap !important;
   border: 0 !important;
 }
-
 
 /* Custom Accessibility Toolbar Styling - Zappy Style */
 
@@ -5503,6 +5262,258 @@ body.accessibility-widget-visible ._access-menu {
   body.accessibility-widget-visible div[id*="mic-access-tool-box"],
   body.accessibility-widget-visible ._access-menu {
     display: none !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   V2 REGENERATED SECTION CSS (בית-hero)
+   Added: 2026-03-13T07:33:44.610Z
+   ═══════════════════════════════════════════════════════════ */
+.index-hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #071F1D;
+  padding: 0;
+  margin: 0;
+}
+
+/* Background image layer */
+.index-hero-section .hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.index-hero-section .hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
+
+/* Gradient scrim overlay for text legibility */
+.index-hero-section .hero-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(circle at 65% 45%, rgba(7,31,29,0.25) 0%, transparent 45%),
+    radial-gradient(circle at 35% 75%, rgba(14,74,58,0.35) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(7,31,29,0.55) 0%, rgba(7,31,29,0.75) 50%, rgba(7,31,29,0.92) 100%);
+}
+
+/* Hero content overlay */
+.index-hero-section .hero-content-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.index-hero-section .hero-content-container {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  color: var(--text-light);
+}
+
+/* Decorative accent line */
+.index-hero-section .hero-accent-line {
+  width: 120px;
+  height: 3px;
+  margin: 0 auto 32px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(200,168,106,0.4);
+}
+
+/* Hero headline */
+.index-hero-section .hero-headline {
+  font-family: 'Frank Ruhl Libre', 'Noto Serif Hebrew', serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text-light);
+  margin: 0 0 24px 0;
+  text-shadow: 0 12px 32px rgba(0,0,0,0.6), 0 4px 12px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+/* Hero subtitle */
+.index-hero-section .hero-subtitle {
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--text-light);
+  opacity: 0.95;
+  margin: 0 0 48px 0;
+  text-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA button group */
+.index-hero-section .hero-cta-group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Primary CTA button */
+.index-hero-section .btn-primary {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #F2C56B 0%, #D8B15C 55%, #B88733 100%);
+  color: #0A1512;
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 60px rgba(242,197,107,0.25);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+.index-hero-section .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 80px rgba(242,197,107,0.35);
+}
+
+/* Secondary CTA button */
+.index-hero-section .btn-secondary {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--accent);
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 2px solid rgba(200,168,106,0.7);
+  font-family: 'Heebo', 'Assistant', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+}
+
+.index-hero-section .btn-secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(200,168,106,0.12);
+  border-color: var(--accent);
+}
+
+/* CTA icons */
+.index-hero-section .cta-icon {
+  flex-shrink: 0;
+  stroke: currentColor;
+}
+
+/* Bottom divider wrapper */
+.index-hero-section .index-hero-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.index-hero-section .index-hero-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .index-hero-section {
+    min-height: 100vh;
+    padding-top: 0;
+  }
+
+  .index-hero-section .hero-content-wrapper {
+    padding: 100px 16px 60px;
+    min-height: 100vh;
+  }
+
+  .index-hero-section .hero-accent-line {
+    width: 80px;
+    margin-bottom: 24px;
+  }
+
+  .index-hero-section .hero-headline {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 8px 24px rgba(0,0,0,0.7), 0 3px 10px rgba(0,0,0,0.5);
+  }
+
+  .index-hero-section .hero-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .index-hero-section .hero-cta-group {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .index-hero-section .btn-primary,
+  .index-hero-section .btn-secondary {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+
+  .index-hero-section .index-hero-divider-wrapper {
+    height: 60px;
   }
 }
 
